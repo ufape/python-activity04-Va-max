@@ -30,9 +30,10 @@ Teste 3: 7
 """
 
 
-def main():
-    pass  # your code here
+from library_problem_5 import teste
 
+def main():
+    teste()
 
 if __name__ == '__main__':
     main()

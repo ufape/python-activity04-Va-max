@@ -30,8 +30,10 @@ Teste 3: 28
 """
 
 
+from library_problem_4 import testar_numeros_perfeitos
+
 def main():
-    pass  # your code here
+    testar_numeros_perfeitos()
 
 
 if __name__ == '__main__':

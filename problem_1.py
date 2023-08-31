@@ -58,7 +58,7 @@ Aluno aprovado.
 
 
 def main():
-    pass  # your code here
+    print("teste")
 
 
 if __name__ == '__main__':

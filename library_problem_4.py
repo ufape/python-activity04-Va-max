@@ -1,14 +1,17 @@
-def divisao(x,y):
-    if x > y:
-        x, y = y, x
-    
-    numeros = []
-    for i in range(x+1, y):
-        if i % 5 == 2 or i % 5 == 3:
-            numeros.append(i)
-            
-    return numeros
+def e_perfeito(n):
+    soma = 0
+    for i in range(1, n):
+        if n % i == 0:
+            soma += i
+    return soma == n
+def testar_numeros_perfeitos():
+    n = int(input("Digite quantos testes realizará: "))
+    for i in range(1, n+1):
+        x = int(input(f"Teste {i}: "))
+        if e_perfeito(x):
+            print(f"{x} é perfeito.")
+        else:
+            print(f"{x} não é perfeito.")
 
 if __name__ == '__main__':
-    d = divisao(1, 10)
-    print(d) 
+    print()
